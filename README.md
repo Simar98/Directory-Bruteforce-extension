@@ -28,8 +28,29 @@ The extension comes with the following wordlists:
 
 You can add your own wordlists by placing `.txt` files in the `wordlists` folder.
 
-## Screenshots
-![Screenshot](screenshot.png) 
+## Adding Your Own Wordlists
+If you want to add your own wordlists, follow these steps:
+1. Open the extension folder on your computer.
+2. Navigate to the wordlists folder.
+3. Add your custom .txt files to this folder. Each file should contain one word or path per line.
+4. Open the popup.js file in a text editor.
+5. Locate the fetchWordlists function, which looks like this:
+
+  async function fetchWordlists() {
+    return ["common.txt", "directories.txt", "custom.txt"];
+  }
+  
+6. Add the name of your new wordlist file to the array. For example, if you added a file named my_wordlist.txt, update the function like this:
+
+  async function fetchWordlists() {
+    return ["common.txt", "directories.txt", "custom.txt", "my_wordlist.txt"];
+  }
+
+7. Save the popup.js file.
+8. Reload the extension in Chrome by going to chrome://extensions/ and clicking the "Reload" button on the extension card.
+9. Your custom wordlists will now appear in the dropdown menu inside the extension.
+
+
 
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
