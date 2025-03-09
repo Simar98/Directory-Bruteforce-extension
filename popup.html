@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Directory Brute Forcer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Directory Brute Forcer</h1>
+    <p class="author">By Simra Randhawa</p>
+    <label for="url">Base URL:</label>
+    <input type="text" id="url" placeholder="https://example.com/" />
+    <label for="wordlistFile">Choose Wordlist:</label>
+    <select id="wordlistFile">
+      <option value="">-- Select a Wordlist --</option>
+    </select>
+    <label for="wordlist">Wordlist:</label>
+    <textarea id="wordlist" placeholder="Enter words, one per line"></textarea>
+    <button id="start">Start</button>
+    <h2>Results:</h2>
+    <ul id="results"></ul>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
