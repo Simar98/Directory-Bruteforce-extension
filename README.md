@@ -4,7 +4,6 @@ A Chrome extension to brute-force directories or parameters on a target website.
 
 ## Features
 - **Wordlist Support**: Use predefined wordlists or upload your own.
-- **Dynamic Loading**: Automatically loads wordlists from the `wordlists` folder.
 - **Status Code Highlighting**: Color-coded results based on HTTP status codes.
 - **Easy to Use**: Simple and intuitive user interface.
 
@@ -23,14 +22,14 @@ A Chrome extension to brute-force directories or parameters on a target website.
 
 ## Wordlists
 The extension comes with the following wordlists:
-- `js.txt`: Common JavaScript file paths.
-- `Sensitive files.txt`: Sensitive files and directories.
-- `Service based dir.txt`: Service-based directories.
+- `common.txt`: Common JavaScript file paths.
+- `directories.txt`: Sensitive files and directories.
+- `custom.txt`: Service-based directories.
 
 You can add your own wordlists by placing `.txt` files in the `wordlists` folder.
 
 ## Screenshots
-![Screenshot](screenshot.png) <!-- Add a screenshot if available -->
+![Screenshot](screenshot.png) 
 
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
@@ -42,4 +41,5 @@ This tool is intended for educational and security testing purposes only. Use it
 Contributions are welcome! Please open an issue or submit a pull request.
 
 ## Author
-[Your Name](https://github.com/yourusername)
+Simar Randhawa
+
